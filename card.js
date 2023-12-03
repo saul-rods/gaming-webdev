@@ -10,17 +10,18 @@ function flipCard() {
 
   this.classList.add('flip');
   playFlipSound();
-
+  //flip first card
   if (!FlippedCard) {
     FlippedCard = true;
     firstCard = this;
     return;
   }
-
+  //flip second card
   secondCard = this;
   checkForMatch();
 }
 
+//Check for matching cards
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
