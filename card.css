@@ -2,6 +2,7 @@
   font-family: ActionComics;
   src: url(./assets/Action\ Comics.ttf);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +15,7 @@ body {
   background-image: url(assets/Jbackground.png);
   background-size: cover;
 }
+
 .game-Title{
   color: #39d325;
   border-radius: 10px;
@@ -68,7 +70,6 @@ body {
     font-size: 10em;
   }
 }
-
 
 .memorycard-game {
   width: 620px;
