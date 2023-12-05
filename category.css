@@ -8,12 +8,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     display: flex;
     background-image: url(assets/Jbackground.png);
     background-size: cover;
 }
+
 .header {
     position: absolute;
     top: 150px; /* Adjust this value based on the desired distance from the top */
@@ -33,12 +35,14 @@ body{
     left: 40%;
     font-family: ActionComics;
 }
+
 .button2{
     position: absolute;
     top: 50%;
     left: 48%;
     font-family: ActionComics;
 }
+
 .button3{
     position: absolute;
     top: 50%;
