@@ -1,26 +1,27 @@
+/* custom font -> ActionComics */
 @font-face{
     font-family: ActionComics;
     src: url(./assets/Action\ Comics.ttf);
   }
-  
+  /* To remove the default margin and padding */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/* Style for the body element */
 body{
-    height: 100vh;
-    display: flex;
+    height: 100vh; /* set 100% body height of the viewport point */
+    display: flex; /* Display flex for the body of the html */
     background-image: url(assets/Jbackground.png);
-    background-size: cover;
+    background-size: cover; /* to cover the entire background with the image */
 }
 
 .header {
-    position: absolute;
+    position: absolute; /*Set header position to absolute*/
     top: 150px; /* Adjust this value based on the desired distance from the top */
     left: 60%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Center the header horizontally */
     width: 50%;
     padding: 25px;
     font-size: 100;
@@ -28,24 +29,26 @@ body{
     font-family: ActionComics;
 }
 
-
-.button1{  
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    font-family: ActionComics;
+/* Style for the first button */
+.button1 {
+    position: absolute; /* Set the button position to absolute */
+    top: 50%; /* Set the top position to 50% of the container */
+    left: 40%; /* Set the left position to 40% of the container */
+    font-family: ActionComics; /* Use the ActionComics font for the button */
 }
 
-.button2{
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    font-family: ActionComics;
+/* Style for the second button */
+.button2 {
+    position: absolute; /* Set the button position to absolute */
+    top: 50%; /* Set the top position to 50% of the container */
+    left: 48%; /* Set the left position to 48% of the container */
+    font-family: ActionComics; /* Use the ActionComics font for the button */
 }
 
-.button3{
-    position: absolute;
-    top: 50%;
-    left: 59%;
-    font-family: ActionComics;
+/* Style for the third button */
+.button3 {
+    position: absolute; /* Set the button position to absolute */
+    top: 50%; /* Set the top position to 50% of the container */
+    left: 59%; /* Set the left position to 59% of the container */
+    font-family: ActionComics; /* Use the ActionComics font for the button */
 }
