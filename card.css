@@ -1,22 +1,26 @@
-@font-face{
+/* Define a custom font called ActionComics */
+@font-face {
   font-family: ActionComics;
   src: url(./assets/Action\ Comics.ttf);
 }
 
+/* Apply a reset to all elements, removing default padding and margin, and using border-box for box sizing */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Style for the body element */
 body {
-  height: 100vh; /*viewport height - visible area of your webpage*/
-  display: flex;
-  background-image: url(assets/Jbackground.png);
-  background-size: cover;
+  height: 100vh; /* Viewport height - visible area of your webpage */
+  display: flex; /* Use flex display for the body */
+  background-image: url(assets/Jbackground.png); /* Set the background image */
+  background-size: cover; /* Cover the entire background with the image */
 }
 
-.game-Title{
+/* Style for elements with the class "game-Title" */
+.game-Title {
   color: #39d325;
   border-radius: 10px;
   width: fit-content;
@@ -28,14 +32,18 @@ body {
   font-family: ActionComics;
 }
 
-.victory{
-  font-size: 100;
+/* Style for elements with the class "victory" */
+.victory {
+  font-size: 100; /* Note: This may need a unit like 'px' or 'em' */
 }
-#you-win{
+
+/* Style for the element with the ID "you-win" */
+#you-win {
   height: 300px;
   width: 500px;
 }
 
+/* Style for elements with the class "overlay-text" */
 .overlay-text {
   display: none;
   position: fixed;
@@ -50,17 +58,19 @@ body {
   font-family: ActionComics;
 }
 
+/* Style for elements with the class "overlay-text-small" */
 .overlay-text-small {
   font-size: .3em;
 }
 
+/* Style for elements with the class "overlay-text" and the class "visible" */
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
   animation: overlay-grow 500ms forwards;
 }
 
-
+/* Keyframes for the overlay animation */
 @keyframes overlay-grow {
   from {
     background-color: rgba(0, 0, 0, 0);
@@ -72,35 +82,40 @@ body {
   }
 }
 
+/* Style for elements with the class "memorycard-game" */
 .memorycard-game {
   width: 620px;
   height: 500px;
   margin: 30px;
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
-  perspective: 1000px; /*depth of the element*/
+  perspective: 1000px; /* Depth of the element */
 }
 
-.cards{
+/* Style for elements with the class "cards" */
+.cards {
   width: calc(25% - 15px);
   height: calc(33.333% - 10px);
   margin: 4px;
   position: relative;
   transform: scale(1);
-  transform-style: preserve-3d; /*to insert the card in the 3d space*/
-  transition: transform .5s; /*transition effect*/
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transform-style: preserve-3d; /* To insert the card in the 3D space */
+  transition: transform .5s; /* Transition effect */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
 
-.cards:active{
+/* Style for active state of elements with the class "cards" */
+.cards:active {
   transform: scale(0.97);
   transition: transform .2s;
 }
 
-.cards.flip{
-  transform: rotateY(180deg); /*rotate the cards 180 degree*/
+/* Style for flipped state of elements with the class "cards" */
+.cards.flip {
+  transform: rotateY(180deg); /* Rotate the cards 180 degrees */
 }
 
+/* Style for elements with the classes "front-card" and "back-card" */
 .front-card,
 .back-card {
   width: 100%;
@@ -112,6 +127,7 @@ body {
   backface-visibility: hidden;
 }
 
+/* Style for elements with the class "front-card" */
 .front-card {
-  transform: rotateY(180deg);  /*ratate front face so that the player can see the front card*/
+  transform: rotateY(180deg);  /* Rotate front face so that the player can see the front card */
 }
